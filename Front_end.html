@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Exemplo de Front-End</title>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+ <style>
+   body {
+     background-color: #000000; 
+     color: white; 
+   }
+   .navbar {
+     background-color: #4B0082; 
+   }
+   .camera-card {
+     text-align: center;
+     border: 2px solid #4B0082; 
+     padding: 10px;
+     margin: 10px 0;
+     background-color: #1a1a1a; 
+     color: white; 
+   }
+   .camera-card img {
+     width: 100%;
+     height: auto;
+     border-radius: 5px;
+   }
+   .btn-primary {
+     background-color: #4B0082; 
+     border-color: #4B0082; 
+   }
+   .btn-primary:hover {
+     background-color: #6a0dad; 
+     border-color: #6a0dad;
+   }
+   table {
+     color: white;
+     background-color:white ; 
+   }
+   th, td {
+     border: 1px solid #4B0082; 
+   }
+   .pagination .page-item .page-link {
+     background-color: #4B0082; 
+     color: white; 
+   }
+   .pagination .page-item .page-link:hover {
+     background-color: #6a0dad; 
+   }
+ </style>
+</head>
+<body>
+
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+   <div class="container-fluid">
+     <a class="navbar-brand" href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTLgySImkU0LG_eiPEeO4zMy_ojk6cceuBDQ&s" width="30" height="30"> Sistema de Câmeras</a>
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse" id="navbarNav">
+       <ul class="navbar-nav">
+         <li class="nav-item">
+           <a class="nav-link active" aria-current="page" href="#">Início</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="#">Detalhe</a>
+         </li>
+       </ul>
+     </div>
+   </div>
+ </nav>
+
+ <div class="container mt-4">
+ 
+   <div class="row">
+     <div class="col-md-2">
+       <div class="camera-card">
+         <img src="https://atrteleinformatica.com.br/Uploads/Imagens/5141/cameras-de-seguranca-no-pacaembu.jpg?CRM" class="col-1">
+         <h7>Câmera 1</h7>
+       </div>
+     </div>
+     <div class="col-md-2">
+       <div class="camera-card">
+         <img src="https://atrteleinformatica.com.br/Uploads/Imagens/5128/cameras-com-infra-na-zona-sul.jpg?BhM" alt="Câmera 2">
+         <h7>Câmera 2</h7>
+       </div>
+     </div>
+     <div class="col-md-2">
+       <div class="camera-card">
+         <img src="https://atrteleinformatica.com.br/Uploads/Imagens/1134/instalacao-de-cameras-na-zona-centro_thumb.jpg?3xA" alt="Câmera 3">
+         <h7>Câmera 3</h7>
+       </div>
+     </div>
+     <div class="col-md-2">
+       <div class="camera-card">
+         <img src="https://atrteleinformatica.com.br/Uploads/Imagens/1104/cameras-de-seguranca-via-internet-em-sao-paulo_thumb.jpg?2hA" alt="Câmera 4">
+         <h7>Câmera 4</h7>
+       </div>
+     </div>
+     <div class="col-md-2">
+       <div class="camera-card">
+         <img src="https://atrteleinformatica.com.br/Uploads/Imagens/1153/tecnico-para-instalacao-de-cameras-na-zona-sul_thumb.jpg?4BA" alt="Câmera 5">
+         <h7>Câmera 5</h7>
+       </div>
+     </div>
+     <div class="col-md-2">
+       <div class="camera-card">
+         <img src="https://atrteleinformatica.com.br/Uploads/Imagens/1111/empresa-para-instalacoes-de-cameras-na-zona-centro_thumb.jpg?2xA" alt="Câmera 6">
+         <h7>Câmera 6</h7>
+       </div>
+     </div>
+   </div>
+
+   
+   <div class="mt-4 mb-2">
+     <button class="btn btn-primary">Importar</button>
+   </div>
+
+   
+   <div class="mt-2">
+     <h3>Acessos Registrados</h3>
+     <table class="table table-bordered">
+       <thead>
+         <tr>
+           <th>Nome</th>
+           <th>Data e Hora</th>
+         </tr>
+       </thead>
+       <tbody>
+         <tr>
+           <td>João Silva</td>
+           <td>18/02/2025 10:20</td>
+         </tr>
+         <tr>
+           <td>Maria Souza</td>
+           <td>18/02/2025 11:00</td>
+         </tr>
+         <tr>
+           <td>Carlos Lima</td>
+           <td>18/02/2025 11:30</td>
+         </tr>
+         <tr>
+           <td>Ana Costa</td>
+           <td>18/02/2025 12:00</td>
+         </tr>
+         <tr>
+           <td>Paula Pereira</td>
+           <td>18/02/2025 12:15</td>
+         </tr>
+         <tr>
+           <td>Lucas Oliveira</td>
+           <td>18/02/2025 12:45</td>
+         </tr>
+       </tbody>
+     </table>
+   </div>
+
+   
+   <div class="mt-4">
+     <nav aria-label="Paginação">
+       <ul class="pagination">
+         <li class="page-item"><a class="page-link" href="#">1</a></li>
+         <li class="page-item"><a class="page-link" href="#">2</a></li>
+         <li class="page-item"><a class="page-link" href="#">3</a></li>
+         <li class="page-item"><a class="page-link" href="#">4</a></li>
+       </ul>
+     </nav>
+   </div>
+ </div>
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+ 
