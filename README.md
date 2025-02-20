@@ -18,7 +18,7 @@ Baixe ou clone o repositório:
 bash
 Copiar
 Editar
-git clone https://github.com/seu-usuario/sistema-de-cameras.git
+git clone 
 Abra o arquivo index.html no navegador.
 📷 Captura de Tela
 (Adicione aqui um print da página para ilustrar como ela está ficando!)
